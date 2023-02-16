@@ -4,7 +4,7 @@ import React from 'react';
 import { social } from '../data';
 
 // import logo
-import Logo from '../assets/img/logo.svg';
+import Logo from '../assets/img/logo.png';
 
 const Footer = () => {
   return (
@@ -15,14 +15,15 @@ const Footer = () => {
             {social.map((item, index) => {
               const { href, icon } = item;
               return (
-                <a className='text-accent text-base' href={href} key={index}>
+                <a className='text-crimson text-base' href={href} key={index}>
                   {icon}
                 </a>
               );
             })}
           </div>
-          <div>
-            <img src={Logo} alt='' />
+          <div className='flex items-center'>
+            <img src={Logo} className='h-40' alt='' />
+            <p className='text-white text-4xl'>Rs Ruhul</p>
           </div>
           <p className='text-paragraph opacity-80 text-[15px]'>
             &copy; 2022 Cristian Mihai. All rights reserved.

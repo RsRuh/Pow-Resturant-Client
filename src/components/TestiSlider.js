@@ -49,7 +49,7 @@ const TestiSlider = () => {
                     {authorText}
                   </h5>
                   <div>
-                    <p className='text-lg text-accent'>{authorName}</p>
+                    <p className='text-lg text-crimson'>{authorName}</p>
                     <p>{authorPosition}</p>
                   </div>
                 </div>

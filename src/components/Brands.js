@@ -1,11 +1,12 @@
 import React from 'react';
-
-// import brands data
 import { brands } from '../data';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Brands = () => {
   return (
-    <section className='min-h-[146px] bg-tertiary flex items-center'>
+    <section className='min-h-[146px] bg-white flex items-center'>
       <div
         className='container mx-auto flex md:justify-between items-center flex-wrap justify-evenly'
       >
@@ -13,8 +14,9 @@ const Brands = () => {
           return (
             <div
               key={idx}
+              data-aos="fade-right"
             >
-              <img src={brand.img} alt='' />
+              <img src={brand.img} className='w-32' alt='' />
             </div>
           );
         })}

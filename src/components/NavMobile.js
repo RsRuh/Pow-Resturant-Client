@@ -14,7 +14,7 @@ import Socials from './Socials';
 import { motion } from 'framer-motion';
 
 // import Link
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,16 +57,15 @@ const NavMobile = () => {
         variants={circleVariants}
         initial='hidden'
         animate={isOpen ? 'visible' : 'hidden'}
-        className='w-4 h-4 rounded-full bg-accent fixed top-0 right-0'
+        className='w-4 h-4 rounded-full bg-crimson fixed top-0 right-0'
       ></motion.div>
 
       <motion.ul
         variants={ulVariants}
         initial='hidden'
         animate={isOpen ? 'visible' : ''}
-        className={`${
-          isOpen ? 'right-0' : '-right-full'
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
+        className={`${isOpen ? 'right-0' : '-right-full'
+          } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
       >
         <div
           onClick={() => setIsOpen(false)}
@@ -79,7 +78,6 @@ const NavMobile = () => {
             <li key={idx} className='mb-8'>
               <Link
                 to={item.href}
-                smooth={true}
                 duration={500}
                 offset={-70}
                 className='text-xl cursor-pointer capitalize'

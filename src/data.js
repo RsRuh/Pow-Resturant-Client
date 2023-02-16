@@ -13,11 +13,11 @@ import {
 } from 'react-icons/fi';
 
 // companies icons
-import FreelancerBrandIcon from './assets/img/brands/freelancer.png';
-import UpworkBrandIcon from './assets/img/brands/upwork.png';
-import FiverBrandIcon from './assets/img/brands/fiverr.png';
-import BehanceBrandIcon from './assets/img/brands/behance.png';
-import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
+import Rocket from './assets/img/brands/Rocket.png';
+import Nogod from './assets/img/brands/Nogod.png';
+import Upay from './assets/img/brands/Upay.png';
+import BKash from './assets/img/brands/BKash.png';
+import Foodpanda from './assets/img/brands/Foodpanda.png';
 
 // projects images
 import Project1 from './assets/img/projects/p1.webp';
@@ -42,27 +42,32 @@ import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
 import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
 import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
 
+//services img
+import icon01 from './assets/img/services/s-icon01.jpg';
+import icon02 from './assets/img/services/s-icon02.jpg';
+import icon03 from './assets/img/services/s-icon03.jpg';
+
 // navigation
 export const navigation = [
   {
     name: 'home',
-    href: 'home',
+    href: '/',
   },
   {
-    name: 'about',
-    href: 'about',
+    name: 'dashboard',
+    href: '/dashboard',
   },
   {
-    name: 'portfolio',
-    href: 'portfolio',
+    name: 'shop',
+    href: '/shop',
+  },
+  {
+    name: 'orders',
+    href: '/orders',
   },
   {
     name: 'services',
     href: 'services',
-  },
-  {
-    name: 'testimonials',
-    href: 'testimonials',
   },
   {
     name: 'contact',
@@ -93,23 +98,23 @@ export const social = [
 // companies
 export const brands = [
   {
-    img: FreelancerBrandIcon,
+    img: BKash,
     href: '',
   },
   {
-    img: UpworkBrandIcon,
+    img: Rocket,
     href: '',
   },
   {
-    img: FiverBrandIcon,
+    img: Nogod,
     href: '',
   },
   {
-    img: BehanceBrandIcon,
+    img: Upay,
     href: '',
   },
   {
-    img: DribbbleBrandIcon,
+    img: Foodpanda,
     href: '',
   },
 ];
@@ -201,26 +206,20 @@ export const skills = [
 // services
 export const services = [
   {
-    icon: <FiLayout />,
-    name: 'Web Design',
+    icon: icon01,
+    name: 'BEST QUALITY FOOD',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },
   {
-    icon: <FiSettings />,
-    name: 'Web Development',
+    icon: icon02,
+    name: '24/7 ON HOTEL',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },
   {
-    icon: <FiPenTool />,
-    name: 'Branding',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-  },
-  {
-    icon: <FiTag />,
-    name: 'SEO',
+    icon: icon03,
+    name: 'EASY TO ORDER',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },

@@ -18,6 +18,14 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+      backgroundImage: {
+        'bgA': "url('/src/assets/img/bg-img/bg-1.png')",
+        'bgB': "url('/src/assets/img/bg-img/bg-2.png')",
+        'bgC': "url('/src/assets/img/bg-img/bg-3.png')",
+        'bgD': "url('/src/assets/img/bg-img/bg-4.png')",
+        'bgE': "url('/src/assets/img/bg-img/bg-5.png')",
+        'bgF': "url('/src/assets/img/bg-img/bg-6.png')",
+      },
       content: {
         about: 'url("/src/assets/img/outline-text/about.svg")',
         portfolio: 'url("/src/assets/img/outline-text/portfolio.svg")',
@@ -29,13 +37,13 @@ module.exports = {
         primary: '#050402',
         secondary: '#1C1D24',
         tertiary: '#131419',
-        accent: {
-          DEFAULT: '#ac6b34',
-          hover: '#925a2b',
+        crimson: {
+          DEFAULT: '#DC143C',
+          hover: '#DC143C',
         },
         paragraph: '#878e99',
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
